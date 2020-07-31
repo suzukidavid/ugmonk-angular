@@ -1,0 +1,30 @@
+.nav-item {
+    &:not(:last-child) {
+        margin-right: $sm;
+    }
+}
+
+.nav-link {
+    outline: none;
+    border: none;
+    color: $black;
+
+    &:hover {
+        color: $black;
+    }
+
+    &--tall {
+        padding-top: $md-2;
+        padding-bottom: $md-2;
+    }
+
+    &--underline {
+
+        border-bottom: $o-2 solid $transparent;
+    
+        &:hover {
+            border-bottom: $o-2 solid $black;
+        }
+    }
+
+}
