@@ -1,0 +1,7 @@
+<div class="card" *ngIf="cloth">
+    <img src="{{cloth.image}}" alt="cloth" class="card--img img-fluid">
+    <div class="card-body">
+        <h2 class="card-title">{{cloth.name}} <span class="card-title--color">({{cloth.color}})</span></h2>
+        <p><fa-icon [icon]="rupeeIcon"></fa-icon> {{cloth.price}}</p>
+    </div>
+</div>
