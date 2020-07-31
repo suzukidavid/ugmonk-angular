@@ -1,0 +1,24 @@
+@import 'main-styles';
+
+.hero {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    background: linear-gradient(to right, rgba($black, $t-20), rgba($black, $t-20)), url('../../../assets/images/hero1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &--content {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        text-align: center;
+        transform: translateY(-50%);
+    }
+
+    &--header {
+        font-size: $font-x-large;
+        color: $white;
+    }
+}
