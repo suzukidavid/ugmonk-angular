@@ -32,7 +32,7 @@
 
     &--underline {
 
-        border-bottom: $o-2 solid $none;
+        border-bottom: $o-2 solid $transparent;
     
         &:hover {
             border-bottom: $o-2 solid $black;
