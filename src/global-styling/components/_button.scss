@@ -1,0 +1,39 @@
+
+.btn {
+    padding: $xs $sm;
+    background-color: $black;
+    color: $white;
+    font-size: $font-default;
+    outline: none;
+    border: none;
+    border-radius: $r-none;
+    cursor: pointer;
+    transition: $fast all ease;
+
+    &:hover {
+        background-color: lighten($black, $s-3);
+        color: $white;
+    }
+
+    &--med {
+        padding: $sm $md;
+        font-size: $font-medium;
+    }
+
+    &--lg {
+        padding: $md $lg;
+        font-size: $font-large;
+    }
+
+    &--outline {
+        background-color: $white;
+        color: $black;
+        border: $o-1 solid $black;
+
+        &:hover {
+            background-color: $black;
+            color: $white;
+            border: $o-1 solid $none;
+        }
+    }
+}

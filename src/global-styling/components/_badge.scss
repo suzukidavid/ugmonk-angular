@@ -1,0 +1,26 @@
+
+.badge {
+    padding: $xs $sm;
+    background-color: $black;
+    color: $white;
+    font-size: $font-default;
+    outline: none;
+    border: none;
+    border-radius: $r-none;
+
+    &--med {
+        padding: $sm $md;
+        font-size: $font-medium;
+    }
+
+    &--lg {
+        padding: $md $lg;
+        font-size: $font-large;
+    }
+
+    &--outline {
+        background-color: $white;
+        color: $black;
+        border: $o-1 solid $black;
+    }
+}
