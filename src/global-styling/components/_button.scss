@@ -1,5 +1,6 @@
 
 .btn {
+    display: inline-block;
     padding: $xs $sm;
     background-color: $black;
     color: $white;
@@ -15,14 +16,14 @@
         color: $white;
     }
 
-    &--med {
+    &--md {
         padding: $sm $md;
-        font-size: $font-medium;
+        // font-size: $font-medium;
     }
 
     &--lg {
         padding: $md $lg;
-        font-size: $font-large;
+        // font-size: $font-large;
     }
 
     &--outline {
@@ -34,6 +35,16 @@
             background-color: $black;
             color: $white;
             border: $o-1 solid $none;
+        }
+    }
+
+    &--transparent {
+        background-color: $white;
+        color: $black;
+
+        &:hover {
+            background-color: $black;
+            color: $white;
         }
     }
 }

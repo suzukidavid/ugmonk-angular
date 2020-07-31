@@ -19,22 +19,24 @@
 }
 
 .nav-link {
-    padding-top: $md-2;
-    padding-bottom: $md-2;
     color: $black;
 
     &:hover {
         color: $black;
     }
-}
 
-.underlined-links-nav {
-    .nav-link {
+    &--tall {
+        padding-top: $md-2;
+        padding-bottom: $md-2;
+    }
+
+    &--underline {
+
         border-bottom: $o-2 solid $none;
     
         &:hover {
             border-bottom: $o-2 solid $black;
         }
     }
-}
 
+}
