@@ -1,0 +1,11 @@
+@import 'main-styles';
+
+.navbar {
+    margin-bottom: $md-2;
+}
+
+.nav-item {
+    &:not(:last-child) {
+        margin-right: $lg;
+    }
+}
