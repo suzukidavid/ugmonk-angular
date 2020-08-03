@@ -1,0 +1,40 @@
+.form-group {
+    margin-bottom: $md;
+}
+
+.error {
+    padding: $sm 0 0 $sm;
+    color: $mojo;
+}
+
+.inp {
+    display: block;
+    width: 100%;
+    padding: $xs $sm;
+    outline: $o-1 solid $black;
+    border: $o-2 solid $transparent;
+
+    &--md {
+        padding: $sm $md;
+    }
+
+    &--lg {
+        padding: $md $lg;
+    }
+
+    &--error {
+        outline: $o-1 solid $mojo;
+        border: $o-2 solid $transparent;
+        color: $mojo;
+        
+        &:focus {
+            border: $o-2 solid $mojo !important;
+            outline: $o-1 solid $transparent !important; 
+        }
+    }
+
+    &:focus {
+        border: $o-2 solid $black;
+        outline: $o-1 solid $transparent;
+    }
+}
