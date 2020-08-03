@@ -6,15 +6,15 @@
         <button class="nav-link nav-link--underline bg--transparent">New Arrivals</button>
       </li>
       <li class="nav-item">
-        <button class="nav-link nav-link--underline bg--transparent" (click)="selectClothes('men')">Men</button>
+        <button class="nav-link nav-link--underline bg--transparent" (click)="changeCategory(1)">Men</button>
       </li>
       <li class="nav-item">
-        <button class="nav-link nav-link--underline bg--transparent" (click)="selectClothes('women')">Women</button>
+        <button class="nav-link nav-link--underline bg--transparent" (click)="changeCategory(2)">Women</button>
       </li>
       <li class="nav-item">
         <button class="nav-link nav-link--underline bg--transparent">Accessories</button>
       </li>
     </ul>
   </nav>
-  <app-clothes-container [clothes]="selectedClothes"></app-clothes-container>
+  <app-clothes-by-category [catId]="catId"></app-clothes-by-category>
 </div>
