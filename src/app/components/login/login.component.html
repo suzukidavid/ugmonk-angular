@@ -1,0 +1,99 @@
+<div class="container login">
+  <div class="row">
+    <div class="col-sm-12 col-md-6">
+      <h1 class="login--header">Login to your account</h1>
+      <form [formGroup]="loginForm" class="login--form" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            class="inp"
+            type="email"
+            name="email"
+            id="email"
+            formControlName="email"
+            [ngClass]="{
+              'inp--error':
+                loginForm.controls.email.invalid &&
+                (formHasError || loginForm.controls.email.dirty)
+            }"
+          />
+          <div
+            class="error"
+            *ngIf="
+              loginForm.controls.email.invalid && (formHasError || loginForm.controls.email.dirty)
+            "
+          >
+            <p
+              *ngIf="
+                loginForm.controls.email.errors.required &&
+                (formHasError || loginForm.controls.email.dirty)
+              "
+            >
+              Email is required
+            </p>
+            <p
+              *ngIf="
+                loginForm.controls.email.errors.email &&
+                (formHasError || loginForm.controls.email.dirty)
+              "
+            >
+              Enter a valid Email
+            </p>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            class="inp"
+            type="password"
+            name="password"
+            id="password"
+            formControlName="password"
+            [ngClass]="{
+              'inp--error':
+                loginForm.controls.password.invalid &&
+                (formHasError || loginForm.controls.password.dirty)
+            }"
+          />
+          <div
+            class="error"
+            *ngIf="
+              loginForm.controls.password.invalid &&
+              (formHasError || loginForm.controls.password.dirty)
+            "
+          >
+            <p
+              *ngIf="
+                loginForm.controls.password.errors.required &&
+                (formHasError || loginForm.controls.password.dirty)
+              "
+            >
+              Password is required
+            </p>
+            <p
+              *ngIf="
+                loginForm.controls.password.errors.minlength &&
+                (formHasError || loginForm.controls.password.dirty)
+              "
+            >
+              Minimum password length is
+              {{ loginForm.controls.password.errors.minlength.requiredLength }}
+            </p>
+          </div>
+        </div>
+        <button class="btn btn--md" type="submit">Login</button>
+      </form>
+    </div>
+    <div class="col-sm-12 col-md-6">
+      <div class="register">
+        <div class="register--block">
+          <h1 class="register--header">Create New Account</h1>
+          <p class="register--content">
+            Register your account for a faster checkout process.
+          </p>
+          <a routerLink="/auth/register" class="btn btn--md">Create Account</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

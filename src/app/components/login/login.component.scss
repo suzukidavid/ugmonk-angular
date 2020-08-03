@@ -1,0 +1,26 @@
+@import 'main-styles';
+
+.login {
+    padding: $xl;
+    margin-top: $xl;
+    &--header {
+        font-size: $font-large;
+        margin-bottom: $md-2;
+    }
+
+    &--form {
+        width: 85%;
+    }
+}
+
+.register {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--header {
+        font-size: $font-large;
+    }
+}
