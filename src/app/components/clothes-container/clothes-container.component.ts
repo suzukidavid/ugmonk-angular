@@ -1,4 +1,5 @@
 import { Component, OnInit , Input} from '@angular/core';
+import { Product } from 'src/app/models/product';
 
 @Component({
   selector: 'app-clothes-container',
@@ -7,7 +8,7 @@ import { Component, OnInit , Input} from '@angular/core';
 })
 export class ClothesContainerComponent implements OnInit {
 
-  @Input() clothes = [];
+  @Input() clothes: Product[] = [];
 
   constructor() { }
 
