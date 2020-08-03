@@ -12,7 +12,22 @@
         border: $o-1 solid $black;
     }
 
-    &-title--color {
-        color: $fedora;
+    &-title {
+        &--color {
+            color: $fedora;
+        }
+
+        & .nav-link {
+            display: inline-block;
+            padding: 0;
+            margin-right: $sm;  
+            border-bottom: $o-1 solid $transparent;
+            transition: $fastest all ease-in-out;
+
+            &:hover {
+                border-bottom: $o-1 solid $black;
+            }
+        }
     }
+
 }

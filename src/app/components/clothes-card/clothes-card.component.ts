@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { faRupeeSign } from '@fortawesome/free-solid-svg-icons';
+import { Product } from 'src/app/models/product';
 
 @Component({
   selector: 'app-clothes-card',
@@ -9,7 +10,7 @@ import { faRupeeSign } from '@fortawesome/free-solid-svg-icons';
 export class ClothesCardComponent implements OnInit {
 
   rupeeIcon = faRupeeSign;
-  @Input() cloth;
+  @Input() cloth: Product;
 
   constructor() { }
 
