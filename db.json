@@ -1,0 +1,109 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "images" : ["https://i.ibb.co/55z32tw/long-sleeve.png"],
+        "title": "Mountains",
+        "color": "Black",
+        "desc": "Lorem Ipsum Dolor",
+        "price": 1200,
+        "quantity": 2000,
+        "short_desc": "Lorem Ipsum",
+        "category": "men",
+        "size": ["sm","md","lg","xl","xxl"],
+        "cat_id": 1
+      },
+
+      {
+        "id": 2,
+        "images" : ["https://i.ibb.co/mJS6vz0/blue-jean-jacket.png"],
+        "title": "Men's Essential",
+        "color": "Blue",
+        "desc": "Lorem Ipsum Dolor",
+        "price": 2500,
+        "quantity": 2000,
+        "short_desc": "Lorem Ipsum",
+        "category": "men",
+        "size": ["sm","md","lg","xl","xxl"],
+        "cat_id": 1
+      },
+      {
+        "id": 3,
+        "images" : ["https://i.ibb.co/s96FpdP/brown-shearling.png"],
+        "title": "Men's Essential",
+        "color": "Brown",
+        "desc": "Lorem Ipsum Dolor",
+        "price": 2500,
+        "quantity": 2000,
+        "short_desc": "Lorem Ipsum",
+        "category": "men",
+        "size": ["sm","md","lg","xl","xxl"],
+        "cat_id": 1
+      },
+      {
+        "id": 4,
+        "images" : ["https://i.ibb.co/qMQ75QZ/floral-shirt.png"],
+        "title": "Classic Tee",
+        "color": "Blue",
+        "desc": "Lorem Ipsum Dolor",
+        "price": 1800,
+        "quantity": 2000,
+        "short_desc": "Lorem Ipsum",
+        "category": "men",
+        "size": ["sm","md","lg","xl","xxl"],
+        "cat_id": 1
+      },
+      {
+        "id": 5,
+        "images" : ["https://i.ibb.co/N3BN1bh/red-polka-dot-dress.png"],
+        "title": "Polka Dot",
+        "color": "Yellow",
+        "desc": "Lorem Ipsum Dolor",
+        "price": 4000,
+        "quantity": 2000,
+        "short_desc": "Lorem Ipsum",
+        "category": "women",
+        "size": ["sm","md","lg","xl","xxl"],
+        "cat_id": 2
+      },
+      {
+        "id": 6,
+        "images" : ["https://i.ibb.co/N71k1ML/grey-jean-jacket.png"],
+        "title": "Women's Essential",
+        "color": "Yellow",
+        "desc": "Lorem Ipsum Dolor",
+        "price": 3000,
+        "quantity": 2000,
+        "short_desc": "Lorem Ipsum",
+        "category": "women",
+        "size": ["sm","md","lg","xl","xxl"],
+        "cat_id": 2
+      },
+      {
+        "id": 7,
+        "images" : ["https://i.ibb.co/KV18Ysr/floral-skirt.png"],
+        "title": "Floral",
+        "color": "White",
+        "desc": "Lorem Ipsum Dolor",
+        "price": 2500,
+        "quantity": 2000,
+        "short_desc": "Lorem Ipsum",
+        "category": "women",
+        "size": ["sm","md","lg","xl","xxl"],
+        "cat_id": 2
+      },
+      {
+        "id": 8,
+        "images" : ["https://i.ibb.co/qBcrsJg/white-vest.png"],
+        "title": "Heaven's Pearl",
+        "color": "White",
+        "desc": "Lorem Ipsum Dolor",
+        "price": 5000,
+        "quantity": 2000,
+        "short_desc": "Lorem Ipsum",
+        "category": "women",
+        "size": ["sm","md","lg","xl","xxl"],
+        "cat_id": 2
+      }
+    ]
+}
