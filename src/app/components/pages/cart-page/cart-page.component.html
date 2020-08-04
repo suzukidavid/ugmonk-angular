@@ -1,0 +1,60 @@
+<div class="container cart-page">
+  <div class="row">
+    <div class="col-sm-12 col-md-7">
+      <div class="checkout-products">
+        <div class="row">
+          <div class="col-md-6 mb-4" *ngFor="let product of cartItems">
+            <div class="card">
+              <img src="{{ product.images[0] }}" alt="image" />
+              <div class="card-body">
+                <h2 class="card-title">
+                  <a
+                    href=""
+                    class="nav-link"
+                    [routerLink]="'/clothes/product/' + product.id"
+                    >{{ product.title }}</a
+                  ><span class="card-title--color">({{ product.color }})</span>
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-5">
+      <div>
+        <div class="checkout-info">
+            <div class="checkout-info--products">
+              <div class="checkout-info-card checkout-info-card--underline">
+                <div>
+                  <h3 class="checkout-info-card--title">Product</h3>
+                </div>
+                <div>
+                  <h3 class="checkout-info-card--title">Price</h3>
+                </div>
+              </div>
+              <div class="checkout-info-card" *ngFor="let product of cartItems">
+                <div>
+                  <h4 class="checkout-info-card--title">{{ product.title }}</h4>
+                </div>
+                <div>
+                  <p class="checkout-info-card--price">Rs. {{ product.price }}</p>
+                </div>
+              </div>
+            </div>
+            <div class="checkout-info-card checkout-info-card--underline">
+              <div>
+                <h3 class="checkout-info-card--title">Total</h3>
+              </div>
+              <div>
+                <h3 class="checkout-info-card--title">Rs. {{ getTotalPrice() }}</h3>
+              </div>
+            </div>
+            <div class="checkout-info--button">
+              <button class="btn btn--lg">Checkout</button>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
