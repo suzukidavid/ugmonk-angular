@@ -2,7 +2,6 @@
     <div class="search">
         <div class="search--container">
             <input type="text" class="inp" [(ngModel)]="searchInput" (ngModelChange)="getSearchResults()" placeholder="search">
-            <button class="btn btn--bordered">Search</button>
         </div>
         <div class="search-prediction" *ngIf="searchResults.length !== 0">
             <div class="search-prediction--container" > 
