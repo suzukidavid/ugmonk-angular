@@ -17,7 +17,6 @@ export class HomeComponent implements OnInit {
 
   public changeCategory(catId: number): void {
     this.catId = catId;
-    console.log('changfes', this.catId)
   }
 
 }
