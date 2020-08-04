@@ -16,6 +16,11 @@
         color: $white;
     }
 
+    &--bordered {
+        outline: $o-1 solid $black;
+        border: $o-2 solid $transparent;
+    }
+
     &--md {
         padding: $sm $lg;
         // font-size: $font-medium;

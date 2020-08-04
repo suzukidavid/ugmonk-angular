@@ -10,7 +10,8 @@
 .inp {
     display: block;
     width: 100%;
-    padding: $xs $sm;
+    padding: $xs $sm; 
+    font-size: $font-default;
     outline: $o-1 solid $black;
     border: $o-2 solid $transparent;
 
