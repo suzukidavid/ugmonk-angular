@@ -1,8 +1,9 @@
 <div class="card" *ngIf="cloth">
     <img src="{{cloth.images[0]}}" alt="cloth" class="card--img img-fluid">
     <div class="card-body">
-        <h2 class="card-title"><a href="" class="nav-link">{{cloth.title}}</a><span class="card-title--color">({{cloth.color}})</span></h2>
+        <h2 class="card-title"><a href="" class="nav-link" [routerLink]="'/clothes/product/'+cloth.id">{{cloth.title}}</a><span class="card-title--color">({{cloth.color}})</span></h2>
         <p class="card-description">{{cloth.short_desc}}</p>
         <p><fa-icon [icon]="rupeeIcon"></fa-icon> {{cloth.price}}</p>
+        <button class="btn" (click)="addToCart()">Add To Cart</button>
     </div>
 </div>
