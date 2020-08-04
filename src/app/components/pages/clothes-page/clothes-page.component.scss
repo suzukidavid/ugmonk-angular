@@ -1,0 +1,53 @@
+@import "main-styles";
+
+.clothes-page {
+  padding: $md-2;
+
+  &--clothes-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.search {
+  margin-bottom: $md-2;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+
+  &--container {
+    display: flex;
+    align-items: center;
+    margin-bottom: $sm;
+    & input {
+      margin-right: $sm;
+    }
+  }
+
+  &-prediction {
+    position: relative;
+    width: 100%;
+
+    &--container {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+      background-color: $white;
+      border: $o-2 solid $black;
+
+      & .nav-item {
+        padding: $sm;
+        margin: 0;
+
+        &:not(:last-child) {
+          border-bottom: $o-1 solid $black;
+        }
+
+        &:hover {
+          background-color: rgba($black, $t-10);
+        }
+      }
+    }
+  }
+}

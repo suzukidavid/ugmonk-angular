@@ -1,0 +1,21 @@
+<div class="container clothes-page">
+    <div class="search">
+        <div class="search--container">
+            <input type="text" class="inp" [(ngModel)]="searchInput" (ngModelChange)="getSearchResults()" placeholder="search">
+            <button class="btn btn--bordered">Search</button>
+        </div>
+        <div class="search-prediction" *ngIf="searchResults.length !== 0">
+            <div class="search-prediction--container" > 
+                <ul class="navbar-nav">
+                    <li class="nav-item" *ngFor="let res of searchResults">
+                        <a class="nav-link" [routerLink]="'/clothes/product/'+res.id">{{res.title}}</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    <div class="clothes-page--clothes-container">
+        <app-clothes-container [clothes]="selectedClothes"></app-clothes-container>
+    </div>
+</div>
