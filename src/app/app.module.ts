@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +13,7 @@ import { ClothesContainerComponent } from './components/clothes-container/clothe
 import { ClothesByCategoryComponent } from './components/clothes-by-category/clothes-by-category.component';
 import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
+import { ClothesPageComponent } from './components/pages/clothes-page/clothes-page.component';
 
 @NgModule({
   declarations: [
@@ -24,14 +25,16 @@ import { SignupComponent } from './components/signup/signup.component';
     ClothesContainerComponent,
     ClothesByCategoryComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    ClothesPageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
