@@ -10,7 +10,7 @@
         "quantity": 2000,
         "short_desc": "Lorem Ipsum",
         "category": "men",
-        "size": ["sm","md","lg","xl","xxl"],
+        "size": ["md","lg","xl"],
         "cat_id": 1
       },
 
@@ -24,7 +24,7 @@
         "quantity": 2000,
         "short_desc": "Lorem Ipsum",
         "category": "men",
-        "size": ["sm","md","lg","xl","xxl"],
+        "size": ["sm","xl","xxl"],
         "cat_id": 1
       },
       {
@@ -37,7 +37,7 @@
         "quantity": 2000,
         "short_desc": "Lorem Ipsum",
         "category": "men",
-        "size": ["sm","md","lg","xl","xxl"],
+        "size": ["sm","md","xl","xxl"],
         "cat_id": 1
       },
       {
@@ -63,7 +63,7 @@
         "quantity": 2000,
         "short_desc": "Lorem Ipsum",
         "category": "women",
-        "size": ["sm","md","lg","xl","xxl"],
+        "size": ["lg","xl","xxl"],
         "cat_id": 2
       },
       {
@@ -76,7 +76,7 @@
         "quantity": 2000,
         "short_desc": "Lorem Ipsum",
         "category": "women",
-        "size": ["sm","md","lg","xl","xxl"],
+        "size": ["sm","md","lg"],
         "cat_id": 2
       },
       {
@@ -89,7 +89,7 @@
         "quantity": 2000,
         "short_desc": "Lorem Ipsum",
         "category": "women",
-        "size": ["sm","md","lg","xl","xxl"],
+        "size": ["sm","lg","xl"],
         "cat_id": 2
       },
       {
@@ -102,7 +102,7 @@
         "quantity": 2000,
         "short_desc": "Lorem Ipsum",
         "category": "women",
-        "size": ["sm","md","lg","xl","xxl"],
+        "size": ["sm","md","lg"],
         "cat_id": 2
       },
       {
@@ -115,7 +115,7 @@
         "quantity": 2000,
         "short_desc": "Lorem Ipsum",
         "category": "men",
-        "size": ["sm","md","lg","xl","xxl"],
+        "size": ["sm","lg","xxl"],
         "cat_id": 1
       },
       
@@ -129,7 +129,7 @@
         "quantity": 2000,
         "short_desc": "Lorem Ipsum",
         "category": "men",
-        "size": ["sm","md","lg","xl","xxl"],
+        "size": ["lg","xl","xxl"],
         "cat_id": 1
       },
       {
@@ -142,7 +142,7 @@
         "quantity": 2000,
         "short_desc": "Lorem Ipsum",
         "category": "men",
-        "size": ["sm","md","lg","xl","xxl"],
+        "size": ["sm","lg","xl","xxl"],
         "cat_id": 1
       },
       {
@@ -155,7 +155,7 @@
         "quantity": 2000,
         "short_desc": "Lorem Ipsum",
         "category": "men",
-        "size": ["sm","md","lg","xl","xxl"],
+        "size": ["sm","md","lg","xxl"],
         "cat_id": 1
       },
       {
@@ -168,7 +168,7 @@
         "quantity": 2000,
         "short_desc": "Lorem Ipsum",
         "category": "women",
-        "size": ["sm","md","lg","xl","xxl"],
+        "size": ["sm","md","lg","xl"],
         "cat_id": 2
       },
       {
@@ -181,7 +181,7 @@
         "quantity": 2000,
         "short_desc": "Lorem Ipsum",
         "category": "women",
-        "size": ["sm","md","lg","xl","xxl"],
+        "size": ["md","lg","xl"],
         "cat_id": 2
       },
       {
@@ -194,7 +194,7 @@
         "quantity": 2000,
         "short_desc": "Lorem Ipsum",
         "category": "women",
-        "size": ["sm","md","lg","xl","xxl"],
+        "size": ["md","lg","xl","xxl"],
         "cat_id": 2
       },
       {
@@ -207,7 +207,7 @@
         "quantity": 2000,
         "short_desc": "Lorem Ipsum",
         "category": "women",
-        "size": ["sm","md","lg","xl","xxl"],
+        "size": ["sm","xl","xxl"],
         "cat_id": 2
       }
     ]
