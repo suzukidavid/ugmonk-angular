@@ -17,7 +17,7 @@
       {
         "id": 2,
         "images" : ["https://i.ibb.co/mJS6vz0/blue-jean-jacket.png"],
-        "title": "Men's Essential",
+        "title": "Denim Jacket",
         "color": "Blue",
         "desc": "Lorem Ipsum Dolor",
         "price": 2500,
@@ -30,7 +30,7 @@
       {
         "id": 3,
         "images" : ["https://i.ibb.co/s96FpdP/brown-shearling.png"],
-        "title": "Men's Essential",
+        "title": "Denim Sweatshirt",
         "color": "Brown",
         "desc": "Lorem Ipsum Dolor",
         "price": 2500,
@@ -69,7 +69,7 @@
       {
         "id": 6,
         "images" : ["https://i.ibb.co/N71k1ML/grey-jean-jacket.png"],
-        "title": "Women's Essential",
+        "title": "Jeans Jacket",
         "color": "Yellow",
         "desc": "Lorem Ipsum Dolor",
         "price": 3000,
@@ -104,6 +104,126 @@
         "category": "women",
         "size": ["sm","md","lg","xl","xxl"],
         "cat_id": 2
+      },
+      {
+        "id": 9,
+        "images" : ["https://i.ibb.co/55z32tw/long-sleeve.png"],
+        "title": "Clear Sky",
+        "color": "Blue",
+        "desc": "Lorem Ipsum Dolor",
+        "price": 1200,
+        "quantity": 2000,
+        "short_desc": "Lorem Ipsum",
+        "category": "men",
+        "size": ["sm","md","lg","xl","xxl"],
+        "cat_id": 1
+      },
+      
+      {
+        "id": 10,
+        "images" : ["https://i.ibb.co/mJS6vz0/blue-jean-jacket.png"],
+        "title": "Denim Navy",
+        "color": "Brown",
+        "desc": "Lorem Ipsum Dolor",
+        "price": 2500,
+        "quantity": 2000,
+        "short_desc": "Lorem Ipsum",
+        "category": "men",
+        "size": ["sm","md","lg","xl","xxl"],
+        "cat_id": 1
+      },
+      {
+        "id": 11,
+        "images" : ["https://i.ibb.co/s96FpdP/brown-shearling.png"],
+        "title": "Polo T-shirt",
+        "color": "White",
+        "desc": "Lorem Ipsum Dolor",
+        "price": 2500,
+        "quantity": 2000,
+        "short_desc": "Lorem Ipsum",
+        "category": "men",
+        "size": ["sm","md","lg","xl","xxl"],
+        "cat_id": 1
+      },
+      {
+        "id": 12,
+        "images" : ["https://i.ibb.co/qMQ75QZ/floral-shirt.png"],
+        "title": "High neck",
+        "color": "Black",
+        "desc": "Lorem Ipsum Dolor",
+        "price": 1800,
+        "quantity": 2000,
+        "short_desc": "Lorem Ipsum",
+        "category": "men",
+        "size": ["sm","md","lg","xl","xxl"],
+        "cat_id": 1
+      },
+      {
+        "id": 13,
+        "images" : ["https://i.ibb.co/N3BN1bh/red-polka-dot-dress.png"],
+        "title": "Basic Dot",
+        "color": "Red",
+        "desc": "Lorem Ipsum Dolor",
+        "price": 4000,
+        "quantity": 2000,
+        "short_desc": "Lorem Ipsum",
+        "category": "women",
+        "size": ["sm","md","lg","xl","xxl"],
+        "cat_id": 2
+      },
+      {
+        "id": 14,
+        "images" : ["https://i.ibb.co/N71k1ML/grey-jean-jacket.png"],
+        "title": "Floral Top",
+        "color": "Yellow",
+        "desc": "Lorem Ipsum Dolor",
+        "price": 3000,
+        "quantity": 2000,
+        "short_desc": "Lorem Ipsum",
+        "category": "women",
+        "size": ["sm","md","lg","xl","xxl"],
+        "cat_id": 2
+      },
+      {
+        "id": 15,
+        "images" : ["https://i.ibb.co/KV18Ysr/floral-skirt.png"],
+        "title": "Floral Mix",
+        "color": "Blue",
+        "desc": "Lorem Ipsum Dolor",
+        "price": 2500,
+        "quantity": 2000,
+        "short_desc": "Lorem Ipsum",
+        "category": "women",
+        "size": ["sm","md","lg","xl","xxl"],
+        "cat_id": 2
+      },
+      {
+        "id": 16,
+        "images" : ["https://i.ibb.co/qBcrsJg/white-vest.png"],
+        "title": "Heaven's Gate",
+        "color": "Black",
+        "desc": "Lorem Ipsum Dolor",
+        "price": 5000,
+        "quantity": 2000,
+        "short_desc": "Lorem Ipsum",
+        "category": "women",
+        "size": ["sm","md","lg","xl","xxl"],
+        "cat_id": 2
       }
     ]
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
