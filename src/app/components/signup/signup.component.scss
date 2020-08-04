@@ -1,0 +1,15 @@
+@import 'main-styles';
+
+.register {
+    padding: $sm;
+    margin-top: $md;
+    &--header {
+        font-size: $font-large;
+        margin-bottom: $md-2;
+        text-align: center;
+    }
+
+    & .row {
+        justify-content: center;
+    }
+}
