@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 import { Product } from 'src/app/models/product';
 import { ProductsService } from 'src/app/services/products.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-clothes-page',
@@ -15,16 +15,18 @@ export class ClothesPageComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private productApi: ProductsService
+    private productApi: ProductsService,
   ) {}
 
   ngOnInit(): void {
-    this.getClothesByCategoryId();
+    this.route.url.subscribe(() => {
+      this.getClothesByCategoryId(parseInt(this.route.snapshot.params.catId))
+    });
   }
 
-  public getClothesByCategoryId(): void {
+  public getClothesByCategoryId(catId: number): void {
     this.productApi
-      .getProductByCategoryId(this.route.snapshot.params.catId)
+      .getProductByCategoryId(catId)
       .subscribe(
         (data) => (this.selectedClothes = data),
         (error) => console.log('Error in getClothesByCategoryId ', error)
@@ -39,4 +41,5 @@ export class ClothesPageComponent implements OnInit {
         .map(({ title,id }) => ({title,id}))
         .filter(({title}) => title.toLowerCase().includes(this.searchInput.toLowerCase()));        
   }
+
 }
