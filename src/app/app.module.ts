@@ -14,6 +14,8 @@ import { ClothesByCategoryComponent } from './components/clothes-by-category/clo
 import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { ClothesPageComponent } from './components/pages/clothes-page/clothes-page.component';
+import { CartPageComponent } from './components/pages/cart-page/cart-page.component';
+import { ProductPageComponent } from './components/pages/product-page/product-page.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { ClothesPageComponent } from './components/pages/clothes-page/clothes-pa
     ClothesByCategoryComponent,
     LoginComponent,
     SignupComponent,
-    ClothesPageComponent
+    ClothesPageComponent,
+    CartPageComponent,
+    ProductPageComponent
   ],
   imports: [
     BrowserModule,
