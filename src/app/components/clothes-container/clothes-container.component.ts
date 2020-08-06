@@ -1,5 +1,7 @@
 import { Component, OnInit , Input} from '@angular/core';
 import { Product } from 'src/app/models/product';
+import { FilterService } from '../../services/filter.service';
+import { Filter } from 'src/app/models/filter';
 
 @Component({
   selector: 'app-clothes-container',
@@ -9,10 +11,12 @@ import { Product } from 'src/app/models/product';
 export class ClothesContainerComponent implements OnInit {
 
   @Input() clothes: Product[] = [];
+  public filterObj: Filter;
 
-  constructor() { }
+  constructor(private filterService :FilterService) { }
 
   ngOnInit(): void {
+    this.filterService.filterObject.subscribe(data => this.filterObj = data);
   }
 
 }
