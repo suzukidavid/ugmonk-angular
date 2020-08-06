@@ -5,7 +5,7 @@
         <div class="row">
           <div class="col-md-6 mb-4" *ngFor="let product of cartItems">
             <div class="card">
-              <img src="{{ product.images[0] }}" alt="image" />
+              <img src="{{ product.images[0] }}" alt="image" class="card--img"/>
               <div class="card-body">
                 <h2 class="card-title">
                   <a
@@ -14,7 +14,7 @@
                     [routerLink]="'/clothes/product/' + product.id"
                     >{{ product.title }}</a
                   ><span class="card-title--color">({{ product.color }})</span>
-                </h2>
+                </h2> 
               </div>
             </div>
           </div>

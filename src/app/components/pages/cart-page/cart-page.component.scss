@@ -12,12 +12,13 @@
         border: $o-1 solid $black;
 
         &--img {
-            width: 260px;
-            height: 350px;
+            margin: 0 auto;
             border: $o-1 solid $black;
         }
 
         &-title {
+            text-align: center;
+
             &--color {
                 color: $fedora;
             }
