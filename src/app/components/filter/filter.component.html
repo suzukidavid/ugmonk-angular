@@ -1,0 +1,19 @@
+<form [formGroup]="filterForm" (ngSubmit)="applyFilter()">
+    <div class="form-group">
+        <label for="size">Size</label>
+        <input class="inp" type="text" id="size" formControlName="size">
+    </div>
+    <div class="form-group">
+        <label for="color">Color</label>
+        <input class="inp" type="text" id="color" formControlName="color">
+    </div>
+    <div class="form-group">
+        <label for="minPrice">Minimum Price</label>
+        <input class="inp" type="text" id="minPrice" formControlName="minPrice">
+    </div>
+    <div class="form-group">
+        <label for="maxPrice">Maximum Price</label>
+        <input class="inp" type="text" id="maxPrice" formControlName="maxPrice">
+    </div>
+    <button type="submit" class="btn">Apply Filter</button>
+</form>
