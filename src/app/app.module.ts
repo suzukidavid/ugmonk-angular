@@ -16,6 +16,8 @@ import { SignupComponent } from './components/signup/signup.component';
 import { ClothesPageComponent } from './components/pages/clothes-page/clothes-page.component';
 import { CartPageComponent } from './components/pages/cart-page/cart-page.component';
 import { ProductPageComponent } from './components/pages/product-page/product-page.component';
+import { FilterComponent } from './components/filter/filter.component';
+import { FilterPipe } from './pipes/filter.pipe';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { ProductPageComponent } from './components/pages/product-page/product-pa
     SignupComponent,
     ClothesPageComponent,
     CartPageComponent,
-    ProductPageComponent
+    ProductPageComponent,
+    FilterComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
