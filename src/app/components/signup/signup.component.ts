@@ -3,9 +3,9 @@ import {
   FormGroup,
   FormControl,
   Validators,
-  AbstractControl,
 } from '@angular/forms';
 import { Router } from '@angular/router';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-signup',
@@ -16,7 +16,7 @@ export class SignupComponent implements OnInit {
   public registerForm: FormGroup;
   public formHasError: boolean = false;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private auth: AuthService) {}
 
   ngOnInit(): void {
     this.makeform();
@@ -54,8 +54,20 @@ export class SignupComponent implements OnInit {
   }
 
   onSubmit() {
-    if (this.registerForm.valid) this.router.navigate(['home']);
-    else this.formHasError = true;
+    if (this.registerForm.valid) {
+      this.auth.signup({
+        email: this.registerForm.controls.email.value,
+        name: this.registerForm.controls.name.value,
+        password: this.registerForm.controls.password.value,
+      }).subscribe(data => {
+        if(data) {
+          console.log('Data from register : ',data);
+          this.router.navigate(['home']);
+        }
+      });
+    }
+    else 
+      this.formHasError = true;
     console.log('Form ', this.registerForm);
   }
 }
