@@ -1,4 +1,18 @@
 {
+  "users": [
+    {
+      "email": "azmalmd12@gmail.com",
+      "name": "Md Azmal",
+      "password": "123456789",
+      "id": 1
+    },
+    {
+      "email": "test@g.com",
+      "name": "aksjdklasjd",
+      "password": "password",
+      "id": 2
+    }
+  ],
   "products": [
     {
       "id": 1,
@@ -313,5 +327,43 @@
     }
   ],
   "cart": [
+    {
+      "id": 1,
+      "images": [
+        "https://i.ibb.co/55z32tw/long-sleeve.png"
+      ],
+      "title": "Mountains",
+      "color": "Black",
+      "desc": "Lorem Ipsum Dolor",
+      "price": 1200,
+      "quantity": 2000,
+      "short_desc": "Lorem Ipsum",
+      "category": "men",
+      "size": [
+        "md",
+        "lg",
+        "xl"
+      ],
+      "cat_id": 1
+    },
+    {
+      "id": 2,
+      "images": [
+        "https://i.ibb.co/mJS6vz0/blue-jean-jacket.png"
+      ],
+      "title": "Denim Jacket",
+      "color": "Blue",
+      "desc": "Lorem Ipsum Dolor",
+      "price": 2500,
+      "quantity": 2000,
+      "short_desc": "Lorem Ipsum",
+      "category": "men",
+      "size": [
+        "sm",
+        "xl",
+        "xxl"
+      ],
+      "cat_id": 1
+    }
   ]
 }
