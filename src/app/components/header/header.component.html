@@ -24,13 +24,16 @@
         </a>
       </div>
       <ul class="navbar-nav">
-        <li class="nav-item">
+        <li class="nav-item" *ngIf="!isLoggedIn">
           <a routerLink="/auth/login" class="nav-link nav-link--tall nav-link--underline">Login</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" *ngIf="!isLoggedIn">
           <a routerLink="/auth/register" class="nav-link nav-link--tall nav-link--underline">Register</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" *ngIf="isLoggedIn">
+          <a  (click)="logout()" class="nav-link nav-link--tall nav-link--underline">Logout</a>
+        </li>
+        <li class="nav-item" *ngIf="isLoggedIn">
           <a routerLink="/cart" class="nav-link nav-link--tall nav-link--underline" (click)="addCartItems()"><fa-icon [icon]="cartIcon"></fa-icon></a>
         </li>
         <!-- <li class="nav-item">
